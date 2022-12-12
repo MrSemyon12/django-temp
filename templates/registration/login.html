@@ -4,13 +4,13 @@
         <h1>Login</h1>
         <hr>
         <form action="{% url 'login' %}" method="post">
-            {{ form }}
+            {{ form.as_p }}
             {% csrf_token %}
             <button type="submit" class="btn btn-success">Отправить</button>
         </form>
         {% if form.errors %}
             <p>{{ form.errors.error }}</p>
         {% endif %}
-        <p>Еще нет аккаунта? Можете зарегистрироваться <a href="{% url 'register' %}">тут</a>.</p>
+        <p class="mt-2">Еще нет аккаунта? Можете зарегистрироваться <a href="{% url 'register' %}">тут</a>.</p>
     </div>
 {% endblock %}

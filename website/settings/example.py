@@ -4,7 +4,7 @@ from website.settings.settings import *
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-p4=j!vx+mavvzv(&7(%+v(%&s!9(j7u=(ogf77wdx!0+euumpd'
+SECRET_KEY = 'my-super-secret-key'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
